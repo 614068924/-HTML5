@@ -1,0 +1,362 @@
+
+        body { 
+            margin: 0 auto;
+            font-family: "微软雅黑";
+            max-width: 750px;
+            min-width: 320px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            background: #f0f0f0;
+            height: 100%;
+        }
+        html{ height: 100%; font-size: 625%;/*相当于是100px*/}
+
+        /* .header img {
+            display: block;
+            width: 7.5rem;
+        } */
+/* 媒体查询 适配不同手机*/
+        /* @media screen and (min-width: 320px) {  
+            html {
+                font-size: 42.666667px
+            }
+        }
+
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 50px
+            }
+        }
+
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 55.2px
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            html {
+                font-size: 102.4px
+            }
+        } */
+        /* 进度条 */
+        .loading{
+           /* height:12.06rem; */
+          height: 100%;
+           width:7.5rem;
+           background: url(../image/loading.jpg) no-repeat 0 0;
+           background-size:contain;
+           background-size: 100% 100%;
+           position: relative;
+        }
+
+/* *************************************************** */
+        .run{
+            margin-left: 1.65rem;
+            position: absolute;
+            width: 1rem;
+            height: 0.1rem;
+            margin-top: 5.13rem;
+            border-radius: 900rem;
+            background: #335497;
+            animation: progress 3s linear ; 
+            -webkit-animation:progress 3s linear ;
+        }
+
+
+/* ********************************************************* */
+/* 遮罩 */
+#back{
+   position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        z-index:100;
+        background-color:gray;
+        opacity: 0.7;
+        visibility: hidden;
+}
+#backImg{
+ background: url(../image/timg.jpg) no-repeat 0 0;
+    width: 326px;
+    height:300px;
+    margin: 0 auto;
+    z-index:101;
+    position: absolute;
+    visibility: hidden;
+}
+
+        /* 主页 */
+        .header{
+            height: 100%;
+           /* height: 12.06rem; */
+           width: 7.5rem;
+           background: url(../image/index.jpg) no-repeat 0 0;
+           background-size:contain;
+           background-size: 100% 100%;
+           position: absolute;
+           z-index: 1
+        }
+        .defact{
+            position: fixed;
+            width: 7.5rem;
+            height:1.28rem;
+            background-color: #edf0f7;
+            bottom: 0;
+            z-index: 0
+        }
+        .header-img{
+            height: 0.35rem;
+            width: 0.35rem;
+            position: absolute;
+            margin-top:11.14rem;
+            z-index: 1;
+            margin-left: 3.57rem;
+            /*调用动画*/
+            animation: run 0.5s linear 0.5s infinite alternate;
+            -webkit-animation:run 0.5s linear 0.5s infinite alternate;
+        }
+      
+        .header-flower{
+              position: absolute;
+              height: 4.22rem;
+              width: 1.61rem;
+              right: 0;
+              margin-top: 3.04rem;
+              margin-right: 0 ;
+              z-index: 1;             
+        }          
+      .header-text{
+              position: absolute;
+              height: 0.36rem;
+              width: 1.52rem;
+              margin-top: 10.69rem;
+              margin-left: 2.97rem;
+              z-index: 1;
+        }
+    
+
+        .catalogue{
+           height: 53.36rem;
+           width: 7.5rem;
+           background: url(../image/2-catalogue.jpg) no-repeat 0 0;
+           background-size:contain;
+           background-size: 100% 100%;
+           position: absolute;
+        }
+        /* 音乐动画 */
+        .catalogue-music{
+              position: fixed;
+              height: 0.52rem;
+              width: 0.7rem;
+              margin-top: 11.23rem;
+              margin-left: 6.6rem;
+              z-index:10;
+              animation: music 2s infinite linear;
+              -webkit-animation: music 2s infinite linear;
+              cursor: pointer
+        }
+        .index-music{
+              margin-top: 0.3rem;
+               margin-left: 6.5rem;
+
+        }
+        /* .动画暂停 */
+        .pused{
+            animation-play-state:paused;
+            -webkit-animation-play-state:paused;
+             cursor: pointer
+        }
+
+        /* 花 */
+        .catalogue-flower{
+             position: absolute;
+              height: 2.13rem;
+              width: 6.07rem;
+              margin-top: 0rem;
+              margin-left: 0.9rem;
+              z-index: 1
+        }
+        /* 5个链接 */
+        .catalogue-one{
+              position: absolute;
+              width: 3.81rem;
+              height: 0.7rem;
+              margin-top: 41.99rem;
+              margin-left: 2.36rem;
+              z-index:1;
+        }
+        .catalogue-two{
+              position: absolute;
+              width: 3.81rem;
+              height: 0.7rem;
+              margin-top: 44.13rem;
+              margin-left: 2.36rem;
+              z-index:1;
+        }
+        .catalogue-there{
+              position: absolute;
+              width: 3.81rem;
+              height: 0.7rem;
+              margin-top: 46.23rem;
+              margin-left: 2.36rem;
+              z-index:1;
+        }
+            .catalogue-four{
+              position: absolute;
+              width: 4.52rem;
+              height: 0.7rem;
+              margin-top: 48.37rem;
+              margin-left: 1.65rem;
+              z-index:1;
+        }
+            .catalogue-five{
+              position: absolute;
+              width: 4.82rem;
+              height: 0.7rem;
+              margin-top: 50.51rem;
+              margin-left: 1.35rem;
+              z-index:1;
+        }
+/* 下面的是列表项 */
+        .one{
+           height: 114.3rem;
+           width: 7.5rem;
+           background: url(../image/3.jpg) no-repeat 0 0;
+           background-size:contain;
+           background-size: 100% 100%;
+           position: absolute;
+        }
+        .two{
+           height: 121.92rem;
+           width: 7.5rem;
+           background: url(../image/4.jpg) no-repeat 0 0;
+           background-size:contain;
+           background-size: 100% 100%;
+           position: absolute;
+        }
+        .there{
+           height: 139.24rem;
+           width: 7.5rem;
+           background: url(../image/5.jpg) no-repeat 0 0;
+           background-size:contain;
+           background-size: 100% 100%;
+           position: absolute;
+        }        
+        .four{
+           height: 108.78rem;
+           width: 7.5rem;
+           background: url(../image/6.jpg) no-repeat 0 0;
+           background-size:contain;
+           background-size: 100% 100%;
+           position: absolute;
+        }
+        .five{
+           height: 122.16rem;
+           width: 7.5rem;
+           background: url(../image/7.jpg) no-repeat 0 0;
+           background-size:contain;
+           background-size: 100% 100%;
+           position: absolute;          
+        }
+
+/* 公共样式 */
+
+        .flower{
+            position: absolute;
+              width: 6.15rem;
+              height: 1.78rem;
+              margin-top: 0rem;
+              margin-left: 0.72rem;
+              z-index:1;
+        }
+        .return{
+              position: absolute;
+              width: 2rem;
+              height: 2rem;
+              bottom: 0;
+              margin-bottom: 2rem;
+              margin-left: 2.63rem;
+              z-index:1;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*动画的第一步*/
+        /*1.申明动画序列  @keyframes  跟着的是动画序列的名称*/
+        @keyframes  run{
+            /*2.写动画的节点  from 0%  to 100%   百分比是时间节点*/
+            from{
+                opacity: 1;
+            }
+            to{
+               opacity: 0;
+            }
+        }
+     @-webkit-keyframes  run{
+            /*2.写动画的节点  from 0%  to 100%   百分比是时间节点*/
+            from{
+                opacity: 1;
+            }
+            to{
+               opacity: 0;
+            }
+        }
+        /* 旋转动画 */
+@keyframes music{
+    0% {transform:skew(20deg) rotate(0deg);} 
+    50% {transform:skew(20deg) rotate(180deg);} 
+    100% {transform:skew(20deg) rotate(360deg);} 
+ }
+ @-webkit-keyframes music{
+    0% {-webkit-transform:skew(20deg) rotate(0deg);} 
+    50% {-webkit-transform:skew(20deg) rotate(180deg);} 
+    100% {-webkit-transform:skew(20deg) rotate(360deg);} 
+ }
+        /* 进度条动画 */
+@keyframes progress{
+            0% {width: 0;} 
+            25% {width: 1.05rem;} 
+            50% {width: 2.1rem;} 
+            75% {width: 3.15rem;} 
+            100% {width: 4.2rem;} 
+}
+@-webkit-keyframes progress{
+    0% {width: 0;} 
+    25% {width: 1.05rem;} 
+    50% {width: 2.1rem;} 
+    75% {width: 3.15rem;} 
+    100% {width: 4.2rem;} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

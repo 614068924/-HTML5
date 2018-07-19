@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>绽放</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/item.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/image.css" />
+    <!-- <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/item.js"></script>
+    <!-- <script src="image.js"></script> -->
+    <script>
+        window.active = 0
+        function fontFun() {
+            var winH = document.documentElement.clientHeight;
+            var winW = document.documentElement.clientWidth;//浏览器可视宽度
+            if(winW<winH)
+            {
+                if (winW >= 750) {
+                    document.documentElement.style.fontSize = "625%";
+                }
+                else {
+                    document.documentElement.style.fontSize = (winW / 750 * 625) + "%";
+                }
+            }else{
+                if (winH >= 750) {
+                    document.documentElement.style.fontSize = "625%";
+                }
+                else {
+                    document.documentElement.style.fontSize = (winH / 750 * 625) + "%";
+                }
+            }          
+        }
+        fontFun();
+        window.onresize = fontFun;
+    </script>
+    <style>
+
+    
+    </style>
+</head>
+<body>
+    <!-- 遮罩 -->
+    <div id="back"></div>
+    <!-- <div id="backImg"></div> -->
+    <!-- 音乐 -->
+    <audio controls="controls" id="audio" src='http://go.163.com/2018/0209/mengniu/audio/bgm.mp3' autoplay="true" loop="loop"
+        style="display: none;"></audio>
+    <!-- <audio id='audio'  preload="auto"  style="display:none;" loop="loop"  src='http://go.163.com/2018/0209/mengniu/audio/bgm.mp3'> -->
+    </audio>
+    <div class="loading">
+        <div class="run"></div>
+    </div>
+<!-- 进度条代码 -->
+    <!-- <div class="progress"> 
+    </div> -->
+    <div class="header">
+        <img class="header-img" src="../image/index-animation.png" alt="">
+        <img class="header-text" src="../image/index-read.png" alt="" >   
+        <img class="catalogue-music index-music" src="../image/music.png" alt="">
+        <!-- <div class="defact"></div> -->
+    </div>
+    <img class="header-flower" src="../image/index-flower.png" alt="">
+
+    <div class="catalogue">
+        <img class="catalogue-music" src="../image/music.png" alt="">  
+        <img class="catalogue-one" src="../image/one.png" alt="">
+        <img class="catalogue-two" src="../image/two.png" alt="">
+        <img class="catalogue-there" src="../image/there.png" alt="">
+        <img class="catalogue-four" src="../image/four.png" alt="">
+        <img class="catalogue-five" src="../image/five.png" alt="">
+    </div>
+        <img class="catalogue-flower" src="../image/catalogue-flower.png" alt="">
+
+        <!-- 5个页面 -->
+    <div class="one">
+        <img class="return" src="../image/return.png" alt="">
+        <img class="catalogue-music" src="../image/music.png" alt="">
+
+        <img class="one-1" src="../image/1-1.jpg" alt="">
+        <img class="one-2" src="../image/1-2.jpg" alt="">
+        <img class="one-3" src="../image/1-3.jpg" alt="">
+        <!-- <img class="one-4" src="../image/1-4.png" alt=""> -->
+        <img class="one-5" src="../image/1-5.jpg" alt="">
+        <img class="one-6" src="../image/1-6.jpg" alt="">
+        <img class="one-7" src="../image/1-7.jpg" alt="">
+        <img class="one-8" src="../image/1-8.jpg" alt="">
+        <img class="one-9" src="../image/1-9.jpg" alt="">
+        <img class="one-10" src="../image/1-10.jpg" alt="">
+        <img class="one-11" src="../image/1-11.jpg" alt="">
+
+        <img class="deity-flower-1" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-2" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-3" src="../image/deity-flower.png" alt="">
+        <!-- <img class="deity-flower-4" src="../image/deity-flower.png" alt=""> -->
+        <img class="deity-flower-5" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-6" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-7" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-8" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-9" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-10" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-11" src="../image/deity-flower.png" alt="">
+    </div>
+    <img class="flower" src="../image/flower.png" alt="">
+    <div class="two">
+        <img class="flower" src="../image/flower.png" alt="">
+        <img class="return" src="../image/return.png" alt="">
+        <img class="catalogue-music" src="../image/music.png" alt="">
+
+        <img class="two-1" src="../image/2-1.jpg" alt="">
+        <img class="two-2" src="../image/2-2.jpg" alt="">
+        <img class="two-3" src="../image/2-3.png" alt="">
+        <!-- <img class="two-4" src="../image/2-4.jpg" alt=""> -->
+        <img class="two-5" src="../image/2-5.png" alt="">
+        <img class="two-6" src="../image/2-6.jpg" alt="">
+        <img class="two-7" src="../image/2-7.jpg" alt="">
+        <img class="two-8" src="../image/2-8.jpg" alt="">
+        <img class="two-9" src="../image/2-9.jpg" alt="">
+        <img class="two-10" src="../image/2-10.jpg" alt="">
+        <img class="two-11" src="../image/2-11.jpg" alt="">
+
+        <img class="deity-flower1" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower2" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower3" src="../image/deity-flower.png" alt="">
+        <!-- <img class="deity-flower4" src="../image/deity-flower.png" alt=""> -->
+        <img class="deity-flower5" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower6" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower7" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower8" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower9" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower10" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower11" src="../image/deity-flower.png" alt="">
+    </div>
+
+
+    <div class="there">
+        <img class="flower" src="../image/flower.png" alt="">
+        <img class="return" src="../image/return.png" alt="">
+        <img class="catalogue-music" src="../image/music.png" alt="">
+
+        <img class="there-1" src="../image/3-1.jpg" alt="">
+        <img class="there-2" src="../image/3-2.jpg" alt="">
+        <img class="there-3" src="../image/3-3.jpg" alt="">
+        <img class="there-5" src="../image/3-5.png" alt="">
+        <img class="there-6" src="../image/3-6.jpg" alt="">
+        <img class="there-7" src="../image/3-7.jpg" alt="">
+        <img class="there-8" src="../image/3-8.jpg" alt="">
+        <img class="there-9" src="../image/3-9.jpg" alt="">
+        <img class="there-10" src="../image/3-10.jpg" alt="">
+        <img class="there-11" src="../image/3-11.jpg" alt="">
+        <img class="there-12" src="../image/3-12.jpg" alt="">
+        <img class="there-13" src="../image/3-13.jpg" alt="">
+        <img class="there-14" src="../image/3-14.jpg" alt="">
+    
+        <img class="deity-flower---1" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---2" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---3" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---5" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---6" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---7" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---8" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---9" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---10" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---11" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---12" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---13" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower---14" src="../image/deity-flower.png" alt="">
+
+    </div>
+
+    <div class="four">
+        <img class="flower" src="../image/flower.png" alt="">
+        <img class="return" src="../image/return.png" alt="">
+        <img class="catalogue-music" src="../image/music.png" alt="">
+
+        <img class="four-1" src="../image/4-1.jpg" alt="">
+        <img class="four-2" src="../image/4-2.jpg" alt="">
+        <img class="four-3" src="../image/4-3.png" alt="">
+        <img class="four-5" src="../image/4-5.png" alt="">
+        <img class="four-6" src="../image/4-6.jpg" alt="">
+        <img class="four-7" src="../image/4-7.jpg" alt="">
+        <img class="four-8" src="../image/4-8.jpg" alt="">
+        <img class="four-9" src="../image/4-9.jpg" alt="">
+        <img class="four-10" src="../image/4-10.jpg" alt="">
+        <img class="four-11" src="../image/4-11.jpg" alt="">
+
+        <img class="deity-flower----1" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower----2" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower----3" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower----5" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower----6" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower----7" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower----8" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower----9" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower----10" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower----11" src="../image/deity-flower.png" alt="">
+    </div>
+
+    <div class="five">
+        <img class="flower" src="../image/flower.png" alt="">
+        <img class="return" src="../image/return.png" alt="">
+        <img class="catalogue-music" src="../image/music.png" alt="">
+
+        <img class="five-1" src="../image/5-1.jpg" alt="">
+        <img class="five-2" src="../image/5-2.jpg" alt="">
+        <img class="five-3" src="../image/5-3.png" alt="">
+        <!-- <img class="five-4" src="../image/5-4.jpg" alt=""> -->
+        <img class="five-5" src="../image/5-5.png" alt="">
+        <img class="five-6" src="../image/5-6.jpg" alt="">
+        <img class="five-7" src="../image/5-7.jpg" alt="">
+        <img class="five-8" src="../image/5-8.jpg" alt="">
+        <img class="five-9" src="../image/5-9.jpg" alt="">
+        <img class="five-10" src="../image/5-10.jpg" alt="">
+        <img class="five-11" src="../image/5-11.jpg" alt="">
+        <img class="five-12" src="../image/5-12.jpg" alt="">
+
+        <img class="deity-flower-----1" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-----2" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-----3" src="../image/deity-flower.png" alt="">
+        <!-- <img class="deity-flower-----4" src="../image/deity-flower.png" alt=""> -->
+        <img class="deity-flower-----5" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-----6" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-----7" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-----8" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-----9" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-----10" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-----11" src="../image/deity-flower.png" alt="">
+        <img class="deity-flower-----12" src="../image/deity-flower.png" alt="">
+
+    </div>
+   
+</html>
